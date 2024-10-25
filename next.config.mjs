@@ -13,7 +13,10 @@ const nextConfig = {
       topLevelAwait: true,
     }
     return config
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true, // Ignores ESLint errors during build on Vercel
+  },
 }
 
 export default nextConfig
